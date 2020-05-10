@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 @font-face
@@ -283,7 +290,7 @@ ul .boss:nth-child(2){
 Partie Responsive
 ------------------------------------------*/
 
-/* Largeur de la fenêtre entre 1024px et 1280px */
+/* Largeur de la fenêtre */
 @media all and (max-width:1024px) {
 
 
@@ -357,11 +364,13 @@ h2 .styleline {
 	margin-bottom: 150px;
 }
 
-
-.job_details {
+.job_details  {
 	position: absolute;
 	padding-top: 50px;
 	padding-right: 20px;
+	width: auto;
+	text-align: justify;
+
 }
 
 /*----------- Prof part ---------*/
@@ -376,28 +385,31 @@ h2 .styleline {
         -ms-flex-direction: row;
             flex-direction: row;
 	margin-left: 0;
-	padding: 0;	
-	margin-bottom: 70px;
-	height: auto;
+	padding: 0;
+	margin-bottom: 200px;
+	margin-top: 50px;
+	margin-right: 20px;
 }
 
-.job_date {
-	margin-right: 20px;
-	margin-bottom: 150px;
-	margin-top: 10px;
+#box_prof p {
+	width: auto;
+}
+
+#box_prof ul:last-child{
+	margin-top: 150px;
+	padding-top: 50px;
 }
 
 .job_details p {
 	text-align: justify;
-	width: auto;
-	padding-right: 20px;
+	padding-right: 40px;
 }
-
 
 /*------ Recommandation part ------ */
 
 #box_ref {
 	margin-top: 80px;
+	padding-top: 20px;
 }
 
 #box_ref ul {
@@ -446,55 +458,69 @@ address ul {
 	font-size: 20px;
 }
 
-article li{
-  display: inline;
-  padding : 10px;
+article {
+	width: 500px;
+	margin: 0 20px;
+	margin-left: 20px;
+	padding: 0 15px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 article ul {
-  width: 500px;
-  margin-top: 10px;
-  text-align: justify;
+	margin:0;
+	padding-left: 30px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #ECEFF1;
+	border-radius: 52px 52px 0px 0px;
+}
+
+article li{
+  display: inline;
+  padding: 10px;
+  text-align: center;
 }
 
 .heading1 {
 	margin-top: 750px;
 	margin-bottom: 10px;
-	margin-left: 50px;	
 	padding: 10px;
 	background-color: #FF9800;
 	border-radius: 50px;
 }
 
+/* --------- loisir ---------- */
+
+article:last-child {
+	margin-top: 1050px;
+}
+
 .heading2 {
-	margin-top: 1250px;
+	margin-top: 1300px;
 	margin-left: 50px;	
 	background-color: #FF9800;
 	border-radius: 50px;
 }
 
-
-/* --------- loisir ---------- */
-
 .fa-book-reader {
 	color: #FF9800;
-	font-size: 30px;
+	font-size: 50px;
 	-webkit-box-shadow: 0 0 0 0 white;
 	        box-shadow: 0 0 0 0 white;
 	border-radius: 0%;
-	margin-left: 50px;
+	margin-left: 150px;
 }
 
 .fa-hiking {
 	color: #FF9800;
-	font-size: 30px;
+	font-size: 50px;
 	-webkit-box-shadow: 0 0 0 0 white;
 	        box-shadow: 0 0 0 0 white;
 	border-radius: 0%;
 	margin-right: 0;
 }
-
-
-
 
 } 
