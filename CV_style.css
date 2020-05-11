@@ -1,16 +1,10 @@
-/*
+a/*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
@@ -33,6 +27,8 @@ body
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	width: auto;
+	margin: 0 auto;
 }
 
 * {
@@ -51,6 +47,7 @@ Définition du trait sous les titres des sections
 	border-bottom: 2px solid #FF9800;
 	line-height: 2;
 	margin-left: 50px;
+	padding-top: 20px;
 }
 
 /*-----------------------------------------------------------------
@@ -117,7 +114,7 @@ Left part : Zone photo, à propos et loisirs
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	width: 350px;
+	width: 100%;
 	height: auto;
 	background-color: #FF9800;
 }
@@ -137,6 +134,10 @@ figure img {
 }
 
 /* En tête des sections de la partie gauche (contac, à propos, loisirs)*/
+
+address {
+	margin-bottom: 500px;
+}
 
 address li{
 	font-weight: bold;
@@ -167,7 +168,9 @@ article ul {
 	margin-top: 50px;
 }
 
-
+article .heading2 {
+	margin-top: 500px;
+}
 
 /*----------------------------------------------
 Right part : identity, schedule, container_prof
@@ -287,7 +290,7 @@ ul .boss:nth-child(2){
 
 
 /*-----------------------------------------
-Partie Responsive
+            Partie Responsive
 ------------------------------------------*/
 
 /* Largeur de la fenêtre */
@@ -315,16 +318,16 @@ figure img {
 	margin-left: 0;
 }
 
-/*-------- Second Part ---------*/
+/*-------- Right Part ---------*/
 
 main {
-	margin-top: 50px;
-	margin-left: 10px;
+	margin-top: 20px;
 	position: absolute;
 }
 
 header {
 	margin-bottom: 350px;
+	padding-top: 20px;
 }
 
 h1 {
@@ -349,18 +352,17 @@ h2 .styleline {
 	margin-left: 0;
 	padding: 0;
 }
-
+/*
 #box_school p {
 	width: auto;
 }
-
+*/
 .school {
 	width: 550px;
 	margin-bottom: 100px;
 }
 
 .school_period {
-	width: 150px;
 	margin-bottom: 150px;
 }
 
@@ -370,7 +372,6 @@ h2 .styleline {
 	padding-right: 20px;
 	width: auto;
 	text-align: justify;
-
 }
 
 /*----------- Prof part ---------*/
@@ -401,7 +402,6 @@ h2 .styleline {
 }
 
 .job_details p {
-	text-align: justify;
 	padding-right: 40px;
 }
 
@@ -410,6 +410,10 @@ h2 .styleline {
 #box_ref {
 	margin-top: 80px;
 	padding-top: 20px;
+}
+
+#box_ref p {
+	max-width: 50%;
 }
 
 #box_ref ul {
@@ -425,25 +429,26 @@ ul .boss:nth-child(2){
 	padding-left: 0;
 }
 
-#box_ref p {
-	max-width: 50%;
-}
-
-
 /*--------- Left part -----------*/
 
 #left_part {
 	/*flex-direction: row;*/
-	width: 250px;
 	margin: 0;
-	height: 0;
-	position: absolute;
+	height: 0;	
+}
+
+address {
+	margin-bottom: 50px;
 }
 
 address ul p{
 	display: inline;
 	line-height: 2;
 	font-weight: normal;
+}
+
+address {
+	width: 500px;
 }
 
 address ul {
@@ -495,12 +500,13 @@ article li{
 /* --------- loisir ---------- */
 
 article:last-child {
-	margin-top: 1050px;
+	margin-top: 2000px;
 }
 
 .heading2 {
-	margin-top: 1300px;
-	margin-left: 50px;	
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;	
 	background-color: #FF9800;
 	border-radius: 50px;
 }
