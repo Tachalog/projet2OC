@@ -13,13 +13,9 @@ body
 {
 	font-family: 'Gotu-Regular';
 	font-size: 15px;
-	margin: 0;
-	height: 100%;
-	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: auto;
 	margin: 0 auto;
 }
 
@@ -106,7 +102,7 @@ Left part : Zone photo, à propos et loisirs
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	width: 100%;
+	width: auto;
 	height: auto;
 	background-color: #FF9800;
 }
@@ -138,15 +134,12 @@ address li{
 }
 
 .heading, .heading1, .heading2  {
-background-color: black;
-color: white;
-text-align: center;
-font-style: normal;
-font-size: 30px;
-padding: 10px 0; 
-}
-
-address .heading, address .heading1, address .heading2 {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-style: normal;
+	font-size: 30px;
+	padding: 10px 0; 
 	font-weight: bold;
 }
 
@@ -161,12 +154,18 @@ article ul .heading1 {
 }
 
 article .heading2 {
-	margin-top: 1300px;
+	margin-top: 1150px;
 }
 
 /*----------------------------------------------
 Right part : identity, schedule, container_prof
 ----------------------------------------------*/
+
+main {
+	width: auto;
+	text-align: justify;
+}
+
 
 /*-------- identity ----------------------*/
 
@@ -208,7 +207,6 @@ h2 .styleline {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	font-size: 15px;
-	text-align: justify;
 }
 
 .school, .school_period {
@@ -216,8 +214,6 @@ h2 .styleline {
   	height: auto;
   	margin-top: 20px;
 }
-
-
 
 /*--------Zone parcours prof-------------*/
 
@@ -236,7 +232,6 @@ h2 .styleline {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	font-size: 15px;
-	text-align: justify;
 }
 
 .job_date, .job_details {
@@ -315,9 +310,10 @@ figure img {
 main {
 	margin-top: 20px;
 	position: absolute;
+	text-align: justify;
 }
 
-header {
+header{
 	margin-bottom: 350px;
 	padding-top: 20px;
 }
@@ -344,11 +340,11 @@ h2 .styleline {
 	margin-left: 0;
 	padding: 0;
 }
-/*
+
 #box_school p {
 	width: auto;
 }
-*/
+
 .school {
 	width: 550px;
 	margin-bottom: 100px;
@@ -426,21 +422,20 @@ ul .boss:nth-child(2){
 #left_part {
 	/*flex-direction: row;*/
 	margin: 0;
-	height: 0;	
+	height: 0;
 }
 
 address {
 	margin-bottom: 50px;
+		-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 address ul p{
 	display: inline;
 	line-height: 2;
 	font-weight: normal;
-}
-
-address {
-	width: 500px;
 }
 
 address ul {
@@ -492,7 +487,7 @@ article li{
 /* --------- loisir ---------- */
 
 article:last-child {
-	margin-top: 1200px;
+	margin-top: 1250px;
 }
 
 .heading2 {
