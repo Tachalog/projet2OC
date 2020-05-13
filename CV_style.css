@@ -281,7 +281,7 @@ ul .boss:nth-child(2){
 ------------------------------------------*/
 
 /* Largeur de la fenêtre */
-@media all and (max-width:1024px) {
+@media all and (max-width:768px) {
 
 
 * {
