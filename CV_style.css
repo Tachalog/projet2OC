@@ -16,13 +16,13 @@ body
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin: 0 auto;
+	margin: 0;
 }
-
+/*
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-}
+}*/
 
 .style_title {
 	font-size: 20px;
@@ -102,8 +102,6 @@ Left part : Zone photo, à propos et loisirs
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	width: auto;
-	height: auto;
 	background-color: #FF9800;
 }
 
@@ -162,7 +160,13 @@ Right part : identity, schedule, container_prof
 ----------------------------------------------*/
 
 main {
-	width: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: justify;
 }
 
@@ -277,21 +281,42 @@ ul .boss:nth-child(2){
 
 
 /*-----------------------------------------
+-------------------------------------------
             Partie Responsive
+-------------------------------------------            
 ------------------------------------------*/
 
 /* Largeur de la fenêtre */
 @media all and (max-width:768px) {
 
-
-* {
-	-webkit-box-sizing: content-box;
-	        box-sizing: content-box;
+body{
+	display: block;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+	width: auto;
+	height: 100px;	
 }
 
 figure {
-	margin: 25px 80px;
-	padding: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin: 0.5rem;
+	padding: 0.4rem;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
 }
 
 figure img {
@@ -299,105 +324,80 @@ figure img {
 	width: 120px;
 }
 
-/* ---- format des sections de titres ---*/
-
-.style {
-	margin-left: 0;
-}
-
 /*-------- Right Part ---------*/
-
+/*
 main {
-	margin-top: 20px;
-	position: absolute;
-	text-align: justify;
-}
+	flex-direction: column;
+	display: block;
+}*/
 
-header{
-	margin-bottom: 350px;
-	padding-top: 20px;
+header {
+	text-align: center;
+	/*display: flex;
+	width: 100%;
+	height: 100%;*/
 }
 
 h1 {
-	margin: 90px 30px 0;
+	margin: 2rem 1rem 0;
+	padding-top: 1rem;
 }
 
 h2 .styleline {
-	margin-left: 30px;
+	margin-left: 1rem;
+}
+
+.style {
+	margin: 1rem;
 }
 
 /*-------- School part ---------*/
 
 #box_school {
-	margin: 20px 35px 0;
+	margin: 30rem 0.5rem 0;
+	padding-top: 1rem;
 }
 
 #box_school ul{
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-	margin-left: 0;
-	padding: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 0 1rem;
 }
+/*
+#box_school + .job_details {
+	width: 90%;
+}*/
 
-#box_school p {
-	width: auto;
-}
-
-.school {
-	width: 550px;
-	margin-bottom: 100px;
-}
-
-.school_period {
-	margin-bottom: 150px;
-}
-
-.job_details  {
-	position: absolute;
-	padding-top: 50px;
-	padding-right: 20px;
-	width: auto;
-	text-align: justify;
+.school, .school_period {
+	width: 95%
 }
 
 /*----------- Prof part ---------*/
 
 #box_prof {
-	margin: 300px 35px 0;
+	margin: 15rem 0.5rem 0;
+	padding-top: 1rem;
 }
 
 #box_prof ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-	margin-left: 0;
-	padding: 0;
-	margin-bottom: 200px;
-	margin-top: 50px;
-	margin-right: 20px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 0 1rem;
 }
 
-#box_prof p {
-	width: auto;
+#box_prof + .job_details{
+	width: 90%;
 }
 
-#box_prof ul:last-child{
-	margin-top: 150px;
-	padding-top: 50px;
-}
-
-.job_details p {
-	padding-right: 40px;
-}
-
-/*------ Recommandation part ------ */
+/*------ Recommandation part ------*/ 
 
 #box_ref {
-	margin-top: 80px;
-	padding-top: 20px;
+	margin: 3rem 1rem 0;
+	padding-top: 1rem;
 }
 
 #box_ref p {
@@ -405,12 +405,11 @@ h2 .styleline {
 }
 
 #box_ref ul {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	margin-left: 0;
-	padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	padding: 0 1rem;
 }
 
 ul .boss:nth-child(2){
@@ -420,49 +419,66 @@ ul .boss:nth-child(2){
 /*--------- Left part -----------*/
 
 #left_part {
-	/*flex-direction: row;*/
+	background-color: transparent;
 	margin: 0;
-	height: 0;
+	width: 100%;
+	height: 100%;	
+	display: block;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+main {
+		margin: 0;
+	width: 100%;
+	height: 100%;	
+	display: block;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 address {
-	margin-bottom: 50px;
+	padding-top: 1rem;
+	margin: 15rem 1rem 10rem 1rem;
 		-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	text-align: center;
+	height: auto;
 }
 
 address ul p{
-	display: inline;
+	display: inline-block;
 	line-height: 2;
 	font-weight: normal;
 }
 
 address ul {
-	margin-left: 20px;
+	margin: 1rem;
+	padding: 1rem;
+	text-align: left;
 }
 
-.heading {	
-	margin-top: 120px;
-	margin-left: 50px;
+.heading {
+	margin: 1rem;	
 	background-color: #FF9800;
 	border-radius: 50px;
-	font-size: 20px;
 }
 
 article {
-	width: 500px;
-	margin: 0 20px;
-	margin-left: 20px;
-	padding: 0 15px;
+	width: 100%;
+	margin:45rem 0 0.5rem;
+	padding: 0;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
 }
 
 article ul {
-	margin:0;
-	padding-left: 30px;
+	margin:0 1rem;
+	padding:0 1rem;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -471,15 +487,15 @@ article ul {
 }
 
 article li{
-  display: inline;
-  padding: 10px;
-  text-align: center;
+	display: inline;
+ 	padding: 1rem;
+  	text-align: center;
 }
 
 .heading1 {
-	margin-top: 750px;
-	margin-bottom: 10px;
-	padding: 10px;
+	margin-top: 2rem;
+	margin-left: 5rem;
+	margin-right: 5rem;	
 	background-color: #FF9800;
 	border-radius: 50px;
 }
@@ -487,13 +503,13 @@ article li{
 /* --------- loisir ---------- */
 
 article:last-child {
-	margin-top: 1250px;
+	margin-top: 160rem;
 }
 
 .heading2 {
-	margin-top: 50px;
-	margin-left: 50px;
-	margin-right: 50px;	
+	margin-top: 5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;	
 	background-color: #FF9800;
 	border-radius: 50px;
 }
@@ -504,7 +520,7 @@ article:last-child {
 	-webkit-box-shadow: 0 0 0 0 white;
 	        box-shadow: 0 0 0 0 white;
 	border-radius: 0%;
-	margin-left: 150px;
+	margin-left: 1rem;
 }
 
 .fa-hiking {
