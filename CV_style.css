@@ -1,3 +1,616 @@
+<<<<<<< HEAD
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@font-face
+{
+	font-family: Roboto, 'Gotu-Regular', arial;
+	src:url('fonts/Gotu-Regular.ttf')format('truetype');
+	src:local("Gotu-Regular");
+	src:url('font/Roboto-Black.ttf')format('truetype');
+	src:url('font/Roboto-BlackItalic.ttf')format('truetype');
+	src:url('font/Roboto-Bold.ttf')format('truetype');
+	src:url('font/Roboto-BoldItalic.ttf')format('truetype');
+	src:url('font/Roboto-Italic.ttf')format('truetype');
+	src:url('font/Roboto-Light.ttf')format('truetype');
+	src:url('font/Roboto-LightItalic.ttf')format('truetype');
+	src:url('font/Roboto-Medium.ttf')format('truetype');
+	src:url('font/Roboto-Regular.ttf')format('truetype');
+	src:url('font/Roboto-Thin.ttf')format('truetype');
+	src:url('font/Roboto-ThinItalic.ttf')format('truetype');
+	src:url('font/Roboto.eot#iefix')format('embedded-opentype'),
+		url('font/Roboto.eot')format('embedded-opentype'),
+		url('font/Roboto.otf')format('otf'),
+		url('font/Roboto.svg')format('svg'),
+		url('font/Roboto.woff')format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+	font-family: Roboto,'Gotu-Regular', arial, verdana;
+	font-size: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+}
+/*
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}*/
+
+.style_title {
+	font-size: 20px;
+}
+
+/*---------------------------------------------------------------
+Définition du trait sous les titres des sections
+----------------------------------------------------------------*/
+.style {
+	border-bottom: 2px solid #FF9800;
+	line-height: 2;
+	margin: 20px 10px 0;
+	padding-top: 20px;
+}
+
+/*-----------------------------------------------------------------
+Mise en page des icônes font awesomes
+------------------------------------------------------------------*/
+.fa-book-reader {
+	color: black;
+	font-size: 30px;
+	-webkit-box-shadow: 0 0 1px 2px black;
+	        box-shadow: 0 0 1px 2px black;
+	border-radius: 50%;
+	padding: 20px;
+	margin:50px 30px;
+}
+
+.fa-hiking {
+	color: black;
+	font-size: 40px;
+	-webkit-box-shadow: 0 0 1px 2px black;
+	        box-shadow: 0 0 1px 2px black;
+	border-radius: 50%;
+	padding: 15px 20px;
+	margin:50px 30px;
+}
+
+.fa-graduation-cap {
+	color :#FF9800;
+	margin: 0px 10px;
+}
+
+.fa-pencil-alt {
+	color :#FF9800;
+	margin: 0px 10px;
+}
+
+.fa-briefcase {
+	color :#FF9800;
+	margin: 0px 10px;
+}
+
+.fa-circle {
+	color: #FF9800;
+	margin-top: 20px;
+	min-width: 50px;
+}
+
+.fa-dot-circle {	
+	color: #FF9800;
+	margin-top: 20px;
+	min-width: 50px;
+
+}
+
+/*-----------------------------------------------------
+Left part : Zone photo, à propos et loisirs
+-------------------------------------------------*/
+#left_part {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #FF9800;
+}
+
+figure {
+	text-align: center;
+	padding: 50px;
+	margin: 25px 0;
+}
+
+figure img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+		-webkit-box-shadow: 0 0 2px 1px black;
+	        box-shadow: 0 0 2px 1px black;	
+}
+
+/* En tête des sections de la partie gauche (contac, à propos, loisirs)*/
+
+address {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin:	0 0 10px;
+}
+
+address li{
+	font-weight: bold;
+	font-style: normal;
+	list-style: none;
+}
+
+.heading, .heading1, .heading2  {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-style: normal;
+	font-size: 30px;
+	padding: 10px 0; 
+	font-weight: bold;
+}
+
+article li {
+	list-style: none;
+	line-height: 2.6;
+}
+
+article .heading2 {
+	margin-top: 1150px;
+}
+
+/*----------------------------------------------
+Right part : identity, schedule, container_prof
+----------------------------------------------*/
+
+main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: justify;
+}
+
+
+/*-------- identity ----------------------*/
+
+header h2 {
+	display: block;
+	font-size: 40px;
+	margin:0;
+}
+
+h1 {
+	margin: 90px 50px 0;
+	padding : 50px 0 0;
+	font-size: 50px;
+}
+
+.firstname  {
+	color: #FF9800;
+}
+
+h2 .styleline {
+	border-bottom: 1px solid #FF9800;
+	margin: 0 0 50px 50px ;
+}
+
+/*----- school part -----*/
+
+#box_school {
+	margin: 100px 20px 0;
+	font-size: 30px;
+}
+
+.school li {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	font-size: 15px;
+}
+
+.period {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	width: 45%;
+}
+
+.details {
+	width: 55%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+/*--------Zone parcours prof-------------*/
+
+#box_prof {
+	margin: 10px 20px 0;
+	font-size: 30px;
+}
+
+.job li {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	font-size: 15px;
+}
+
+/*-----------------------------------------
+Zone recommandation
+-----------------------------------------*/
+
+#box_ref {
+	margin: 20px 35px 0;
+	font-size: 30px;
+}
+
+#box_ref ul {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: auto;
+	width: 100%;
+	font-size: 15px;
+}
+
+.boss {
+	width: 100%;
+  	height: auto;
+  	margin-top: 20px;;
+}
+
+ul .boss:nth-child(2){
+	padding-left: 30px;
+}
+
+/*-----------------------------------------
+-------------------------------------------
+            Partie Responsive
+-------------------------------------------            
+------------------------------------------*/
+
+/* Largeur de la fenêtre */
+@media all and (max-width:768px) {
+
+body{
+	display: block;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+	width: auto;
+	height: 100px;	
+}
+
+figure {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin: 8px;
+	padding: 7px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+}
+
+figure img {
+	height: 120px;
+	width: 120px;
+}
+
+/*-------- Right Part ---------*/
+
+main {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	display: block;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 32px 16px 0;
+	padding-top: 16px;
+}
+
+h2 .styleline {
+	margin-left: 16px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+.style {
+	margin: 40px 16px 16px 0;
+}
+
+.style_title {
+	font-size: 20px;
+}
+
+/*-------- School part ---------*/
+
+#box_school {
+	margin: 840px 20px 0;
+	font-size: 30px;
+}
+
+.school {
+	padding-left: 0;
+}
+.school li {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	font-size: 15px;
+}
+
+.period {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	width: 100%;
+}
+
+.details {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: justify;
+}
+
+.details p:nth-child(2){
+	text-align: left;
+}
+
+.details p:nth-child(1) {
+	text-align: left;
+}
+
+/*----------- Prof part ---------*/
+
+#box_prof {
+	margin: 10px 20px 0;
+	font-size: 30px;
+}
+
+.job {
+	padding-left: 0;
+}
+
+.job li {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	font-size: 15px;
+}
+
+/*------ Recommandation part ------*/ 
+
+#box_ref {
+	margin: 10px 20px 0;
+	font-size: 30px;
+}
+
+#box_ref ul {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	font-size: 15px;
+	padding-left: 0;
+}
+
+.boss {
+	width: 100%;
+  	margin-top: 20px;
+  	text-align: left;
+}
+
+ul .boss:nth-child(2){
+	padding-left: 0;
+}
+
+/*--------- Left part -----------*/
+
+#left_part {
+	background-color: transparent;
+	margin: 0;
+	width: 100%;
+	height: 100%;	
+	display: block;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+main {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+address {
+	padding-top: 40px;
+	margin: 96px 16px 16px 16px;
+		-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	text-align: center;
+	height: auto;
+}
+
+address ul p{
+	display: inline-block;
+	line-height: 1;
+	font-weight: normal;
+}
+
+address ul {
+	margin: 8px;
+	padding: 8px;
+	text-align: left;
+}
+
+.heading {
+	margin: 16px;	
+	background-color: #FF9800;
+	border-radius: 50px;
+	width: 100%;
+	font-size: 20px;
+}
+
+article {
+	width: 100%;
+	margin: 16px 0 20px;
+	padding: 0;
+	/*align-items: center;*/
+}
+
+article ul {
+	margin: 8px;
+	padding:8px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #ECEFF1;
+	border-radius: 52px 52px 0px 0px;
+	width: 90%;
+}
+
+article li{
+	display: inline;
+ 	padding: 16px;
+  	text-align: center;
+}
+
+.heading1 {
+	margin: 16px;	
+	background-color: #FF9800;
+	border-radius: 50px;
+	width: 90%;
+	font-size: 20px;
+}
+
+/* --------- loisir ---------- */
+
+article .heading2 {
+	margin: 16px;
+}
+
+.heading2 {
+	/*margin: 16px;*/	
+	background-color: #FF9800;
+	border-radius: 50px;
+	width: 90%;;
+	font-size: 20px;
+}
+
+.fa-book-reader {
+	color: #FF9800;
+	font-size: 35px;
+	-webkit-box-shadow: 0 0 0 0 white;
+	        box-shadow: 0 0 0 0 white;
+	border-radius: 0%;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.fa-hiking {
+	color: #FF9800;
+	font-size: 35px;
+	-webkit-box-shadow: 0 0 0 0 white;
+	        box-shadow: 0 0 0 0 white;
+	border-radius: 0%;
+	margin-right: 0;
+	margin-top: 1rem;
+}
+
+=======
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 @font-face
@@ -530,4 +1143,5 @@ article:last-child {
 	margin-top: 1rem;
 }
 
+>>>>>>> 5d3a8c71eee853b6aa9750f136c5a26a975a5017
 } 
