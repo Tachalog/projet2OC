@@ -374,10 +374,15 @@ h1 {
 
 h2 .styleline {
 	margin-left: 16px;
+	font-size: 32px;
+}
+
+header h2 {
+	font-size: 32px;
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .style {
@@ -385,14 +390,14 @@ h3 {
 }
 
 .style_title {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 /*-------- School part ---------*/
 
 #box_school {
 	margin: 840px 20px 0;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .school {
@@ -434,18 +439,18 @@ h3 {
 }
 
 .details p:nth-child(2){
-	text-align: left;
+	text-align: center;
 }
 
 .details p:nth-child(1) {
-	text-align: left;
+	text-align: center;
 }
 
 /*----------- Prof part ---------*/
 
 #box_prof {
 	margin: 10px 20px 0;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .job {
@@ -468,7 +473,7 @@ h3 {
 
 #box_ref {
 	margin: 10px 20px 0;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 #box_ref ul {
@@ -547,7 +552,6 @@ article {
 	width: 100%;
 	margin: 16px 0 20px;
 	padding: 0;
-	/*align-items: center;*/
 }
 
 article ul {
@@ -572,7 +576,7 @@ article li{
 	background-color: #FF9800;
 	border-radius: 50px;
 	width: 90%;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 /* --------- loisir ---------- */
@@ -586,7 +590,6 @@ article .heading2 {
 	background-color: #FF9800;
 	border-radius: 50px;
 	width: 90%;;
-	font-size: 20px;
 }
 
 .fa-book-reader {
@@ -608,5 +611,20 @@ article .heading2 {
 	margin-right: 0;
 	margin-top: 1rem;
 }
+
+.fa-circle {
+	color: #FF9800;
+	margin-top: 20px;
+	min-width: 40px;
+}
+
+.fa-dot-circle {	
+	color: #FF9800;
+	margin-top: 20px;
+	min-width: 40px;
+
+}
+
+
 
 } 
